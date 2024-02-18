@@ -578,20 +578,12 @@ video {
   }
 }
 
-.row-span-5 {
-  grid-row: span 5 / span 5;
+.row-span-2 {
+  grid-row: span 2 / span 2;
 }
 
 .row-span-4 {
   grid-row: span 4 / span 4;
-}
-
-.row-span-3 {
-  grid-row: span 3 / span 3;
-}
-
-.row-span-2 {
-  grid-row: span 2 / span 2;
 }
 
 .mx-auto {
@@ -616,12 +608,24 @@ video {
   display: none;
 }
 
+.h-24 {
+  height: 6rem;
+}
+
 .h-full {
   height: 100%;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .w-10\/12 {
   width: 83.333333%;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .transform {
@@ -632,20 +636,20 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.grid-rows-3 {
-  grid-template-rows: repeat(3, minmax(0, 1fr));
-}
-
 .grid-rows-4 {
   grid-template-rows: repeat(4, minmax(0, 1fr));
 }
 
+.items-center {
+  align-items: center;
+}
+
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .space-x-10 > :not([hidden]) ~ :not([hidden]) {
@@ -664,26 +668,64 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.px-40 {
-  padding-left: 10rem;
-  padding-right: 10rem;
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+.from-auxiliary {
+  --tw-gradient-from: #9AD0C2 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(154 208 194 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+.from-secondary {
+  --tw-gradient-from: #2DCBD3 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(45 203 211 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-auxiliary {
+  --tw-gradient-to: #9AD0C2 var(--tw-gradient-to-position);
+}
+
+.to-secondary {
+  --tw-gradient-to: #2DCBD3 var(--tw-gradient-to-position);
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .font-body {
   font-family: Josefin Sans;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .text-auxiliary {
   --tw-text-opacity: 1;
-  color: rgb(45 203 211 / var(--tw-text-opacity));
+  color: rgb(154 208 194 / var(--tw-text-opacity));
+}
+
+.text-primaryText {
+  --tw-text-opacity: 1;
+  color: rgb(12 45 87 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid {
+    display: grid;
+  }
 }

@@ -5,8 +5,10 @@ module.exports = {
     extend: {
       colors:{
         primary: "#090B18",
-        secondary: "#FF6600",
-        auxiliary: "#2DCBD3"
+        secondary: "#2DCBD3",
+        auxiliary: "#9AD0C2",
+        primaryText: "#0C2D57"
+
       },
       fontFamily:{
         body: ["Josefin Sans"]
