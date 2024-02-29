@@ -4,11 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        primary: "#090B18",
-        secondary: "#2DCBD3",
-        auxiliary: "#9AD0C2",
-        primaryText: "#0C2D57",
-        decorColor: "#FF6600"
+        primary: "#09191F",
+        secondary: "#3D606E",
+        auxiliary: "#09191F",
+        primaryText: "#D8D8D8",
+        decorColor: "#4E9F3D"
       },
       fontFamily:{
         body: ["Josefin Sans"]
