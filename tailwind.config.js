@@ -12,6 +12,11 @@ module.exports = {
       },
       fontFamily:{
         body: ["Josefin Sans"]
+      },
+      backgroundImage: {
+        'hero-pattern': "url('/public/images/background.jpg')",
+        'bg2': "url('./public/images/blog3.jpg')",
+        'bg3': "url('./public/images/blog1.jpg')"
       }
     },
   },
